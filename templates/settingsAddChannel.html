@@ -1,0 +1,34 @@
+<div id="settingsMenuContd" style="position: relative; width: 100vw; height: 100vh; margin: 0 auto;">
+    <a id="settingsButton" href="#settings">
+        <div class="hover-container" style="position: absolute; top: 83%; left: 3%; width: 34%; height: 11%;">
+            <img src="/static/backButton.png"
+                class="img-fluid"
+                style="width: 100%; height: 100%; object-fit: contain; position: absolute; top: 0; left: 0;">
+            <img src="/static/settingsButtonOverlay.png"
+                class="img-fluid hover-image-settings"
+                style="width: 100%; height: 100%; object-fit: contain; position: absolute; top: 0; left: 0;">
+        </div>
+    </a>
+
+    <form id="addChannelForm" class="alt-fade-in" action="/templates/settingsAddChannelScripts.js" method="post" style="position: relative; width: 100vw; height: 100vh; margin: 0 auto; font-family: 'Rodin', sans-serif;" enctype="multipart/form-data">
+        <div id="addChannelList" class="d-flex flex-column align-items-center justify-content-center" style="position: relative; top: 5%; left: 10%; width: 80%; height: 80%;">
+            <input type="text" name="channel_name" placeholder="Click to enter Channel Name" required
+                style="width: 60%; padding: 10px; font-size: 1.2em; border-radius: 5px; margin: 1vh; text-align: center; background: url('/static/settingsOption.png') no-repeat center center; background-size: 100% 100%;; background-color: transparent; width: 48vw; height: 15vh; border: none; color: 313031;">
+            <input type="text" name="channel_url" placeholder="Click to enter Channel URL" required
+                style="width: 60%; padding: 10px; font-size: 1.2em; border-radius: 5px; margin: 1vh; text-align: center; background: url('/static/settingsOption.png') no-repeat center center; background-size: 100% 100%;; background-color: transparent; width: 48vw; height: 15vh; border: none; color: 313031;">
+            <input type="file" name="channel_image" accept="image/*" required
+                style="width: 60%; padding: 10px; font-size: 1.2em; border-radius: 5px; margin: 1vh; margin-top: 10px; text-align: center; color: white;">
+            <button style="margin-top: 20px; background-color: transparent; border: none; padding: 0; cursor: pointer;"
+                    type="submit">
+                <div class="hover-container" style="position: relative; width: 17vw;">
+                    <img src="/static/settingsOptionAdd.png"
+                        class="img-fluid"
+                        style="width: 100%; height: 100%; object-fit: contain;"/>
+                    <img src="/static/settingsOptionOverlay.png"
+                        class="img-fluid hover-image-settings"
+                        style="width: 100%; height: 100%; object-fit: contain;"/>
+                </div>
+            </button>
+        </div>
+    </form>
+</div>

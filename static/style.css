@@ -1,0 +1,225 @@
+*{
+    cursor: url("/static/pointer.png"), auto;
+}
+
+@font-face {
+  font-family: 'Rodin';
+  src: url('/static/fonts/FOT-RodinNTLG Pro DB.otf') format('openntype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.time {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(2px, 5vw, 76px);
+  color: #9b9b9b;
+}
+
+.date {
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: clamp(2px, 3vw, 54px);
+  color: #797979;
+}
+
+.channel-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 1vw;
+  justify-items: center;
+  align-items: center;
+}
+
+#warningScreen {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-delay: 0.7s;
+    animation-duration: 0.85s;
+    animation-fill-mode: forwards;
+}
+
+#warningContinue {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-delay: 2.5s;
+    animation-duration: 0.85s;
+    animation-fill-mode: forwards;
+}
+
+#warningScreenOut {
+    opacity: 1;
+    animation-name: fadeOut;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#warningContinueOut {
+    opacity: 1;
+    animation-name: fadeOut;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#mainMenuBack{
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    background: url(wiibackground.png);
+    background-size: 100% auto;
+    z-index: 1;
+}
+
+#settingsMenuBack{
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    background: url(settingsBack.png);
+    background-size: 100% 97%;
+}
+
+#settingsMenuContd{
+    background: url(settingsBack.png);
+    background-size: 100% 97%;
+}
+
+#mainBar{
+    background: url(straightBar.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 70%;
+    height: 30%;
+    width: 100%;
+}
+
+#logoZoom{
+    transition: transform 0.3s;
+}
+
+#logoZoom:hover{
+    transform: scale(1.2);
+}
+
+#tv img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+
+.channel {
+    animation: basicTvAnim 3s infinite;
+}
+
+#rightArrow{
+    animation: arrowLoopRight 1s infinite;
+}
+
+#leftArrow{
+    animation: arrowLoopLeft 1s infinite;
+}
+
+.arrow-zoom {
+    transition: transform 0.2s;
+}
+#leftArrow:hover .arrow-zoom,
+#rightArrow:hover .arrow-zoom {
+    transform: scale(1.4);
+}
+
+.hover-container {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none; /* so hover passes through */
+  transition: opacity 0.4s ease;
+  z-index: 10;
+}
+
+.hover-image-settings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  z-index: 10;
+}
+
+.hover-container:hover .hover-image {
+  opacity: 1;
+}
+
+.hover-container:hover .hover-image-settings {
+  opacity: 1;
+}
+
+.carousel-item {
+  transition: transform 0.1s ease-in-out;
+}
+
+.carousel-inner {
+  transition: transform 0.1s ease-in-out;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1}
+}
+
+@keyframes fadeOut{
+    0% {opacity: 1;}
+    100% {opacity: 0}
+}
+
+@keyframes arrowLoopRight{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(1vh);}
+    100%{transform: translateX(0);}
+}
+
+@keyframes arrowLoopLeft{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(-1vh);}
+    100%{transform: translateX(0);}
+}
+
+@keyframes basicTvAnim{
+    0%{opacity: 1}
+    50%{opacity: 0.2}
+    100%{opacity: 1}
+}
+
+.fade-out {
+  filter: opacity(0);
+  transition: filter 0.4s;
+}
+
+.fade-in {
+  filter: opacity(1);
+  transition: filter 0.4s;
+}
+
+.alt-fade-in {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.carousel-item.active {
+  transition: transform 0.5s ease-in-out;
+}

@@ -1,0 +1,114 @@
+<div id="mainMenuBack" class="mainMenu" style="position: relative; width: 100vw; height: 100vh; margin: 0 auto;">
+    <div class="menuContent">
+        <img src="/static/bottomBar.png"
+        class="d-block mx-auto img-fluid"
+        alt="Responsive image"
+        style="position: absolute; top: 70%; left: 0; width: 100%; height: 30%;">
+
+        <img src="/static/wiilogofull.png"
+        class="d-block mx-auto img-fluid"
+        alt="Responsive image"
+        style="position: absolute; top: 73%; left: 0; width: 15%; height: 20%;">
+
+        <a id="settingsButton" href="#settings">
+            <img src="/static/wiilogo.png"
+            id="logoZoom"
+            class="d-block mx-auto img-fluid"
+            alt="Responsive image"
+            style="position: absolute; top: 72%; left: 3.3%; width: 10.5%; height: 19%;">
+        </a>
+
+        <img src="/static/voidlogofull.png"
+        class="d-block mx-auto img-fluid "
+        alt="Responsive image"
+        style="position: absolute; top: 73%; left: 85%; width: 15%; height: 20%; transform: size(-1)">
+
+        <button id="msgButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#msgModal"
+            style="background-color: transparent; border: none; position: absolute; top: 71%; left: 85.3%; width: 12%; height: 19%;">
+            <img id="logoZoom" src="/static/msglogo.png" class="img-fluid" alt="Responsive image">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="msgModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="false">
+            <div class="modal-dialog modal-xl modal-dialog-centered" style="background: transparent; border: none;">
+                <div class="modal-content" style="background: transparent; border: none; box-shadow: none;">
+                    <img src="/static/letter.png" style="position: relative; width: 100%;">
+                    <p style="position: absolute; top: 7%; left: 37%; color: #616161; font-family: 'PT Serif', serif; font-size: xxx-large;">WiiMark v0.9</p>
+                    <p style="position: absolute; top: 18%; left: 16%; color: #616161; font-family: 'PT Serif', serif; font-size: xxx-large;">This software comes with absolutely</p>
+                    <p style="position: absolute; top: 26%; left: 34%; color: #616161; font-family: 'PT Serif', serif; font-size: xxx-large;">NO WARRANTY!</p>
+                    <p style="position: absolute; top: 40%; left: 22%; color: #616161; font-family: 'PT Serif', serif; font-size: xx-large;">Wii icon to add or delete channels.</p>
+                    <p style="position: absolute; top: 48%; left: 22%; color: #616161; font-family: 'PT Serif', serif; font-size: xx-large;">SD card to check localStorage space.</p>
+                    <p style="position: absolute; top: 56%; left: 22%; color: #616161; font-family: 'PT Serif', serif; font-size: xx-large;">localStorage is where the channel data is stored.</p>
+                    <p style="position: absolute; top: 70%; left: 18%; color: #616161; font-family: 'PT Serif', serif; font-size: xxx-large;">Hoping to not get nuked by big N.</p>
+                    <button type="button" class="btn btn-secondary hover-container" data-bs-dismiss="modal" style="position: absolute; top: 82%; left: 25%; background: transparent; border: none; box-shadow: none;">
+                        <img src="/static/backButton.png" class="img-fluid" style="position: relative; width: 35%; object-fit: contain;">
+                        <img src="/static/settingsButtonOverlay.png" class="img-fluid hover-image-settings" style="position: relative; width: 35%; left:-35.5%; object-fit: contain;">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <button id="sdButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sdModal"
+            style="background-color: transparent; border: none; position: absolute; top: 80%; left: 16%; width: 5.5%; height: 14%; z-index: 2;">
+            <img id="logoZoom" src="/static/sd.png" class="img-fluid" alt="Responsive image">
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="sdModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="false">
+            <div class="modal-dialog modal-xl modal-dialog-centered" style="background: transparent; border: none;">
+                <div class="modal-content" style="background: transparent; border: none; box-shadow: none;">
+                    <img src="/static/letter.png" style="position: relative; width: 100%;">
+                    <p style="position: absolute; top: 7%; left: 30%; color: #616161; font-family: 'PT Serif', serif; font-size: xxx-large;">localStorage capacity</p>
+                    <p id="space" style="position: absolute; top: 38%; left: 33%; color: #616161; font-family: 'PT Serif', serif; font-size: xxx-large;"></p>
+                    <p id="space" style="position: absolute; top: 38%; left: 41%; color: #616161; font-family: 'PT Serif', serif; font-size: xxx-large;">MB occupied</p>
+                    <p id="space" style="position: absolute; top: 50%; left: 19%; color: #616161; font-family: 'PT Serif', serif; font-size: xx-large;">Modern browsers generally have 10MB of storage</p>
+                    <button type="button" class="btn btn-secondary hover-container" data-bs-dismiss="modal" style="position: absolute; top: 82%; left: 25%; background: transparent; border: none; box-shadow: none;">
+                        <img src="/static/backButton.png" class="img-fluid" style="position: relative; width: 35%; object-fit: contain;">
+                        <img src="/static/settingsButtonOverlay.png" class="img-fluid hover-image-settings" style="position: relative; width: 35%; left:-35.5%; object-fit: contain;">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <img src="/static/sdshadow.png"
+        id="logoZoom"
+        class="d-block mx-auto img-fluid"
+        alt="Responsive image"
+        style="position: absolute; top: 82.6%; left: 17.3%; width: 4%; height: 10%; z-index: 1;">
+
+        <div id="tvContainer" class="carousel slide" data-bs-interval="false" style="padding-top: 3vh;">
+            <div class="carousel-inner mx-auto" style="width: 80%; height: auto;">
+
+                <div class="carousel-item active">
+                <div id="tvGridPage1" class="channel-grid"></div>
+                </div>
+                <div class="carousel-item">
+                <div id="tvGridPage2" class="channel-grid"></div>
+                </div>
+                <div class="carousel-item">
+                <div id="tvGridPage3" class="channel-grid"></div>
+                </div>
+                <div class="carousel-item">
+                <div id="tvGridPage4" class="channel-grid"></div>
+                </div>
+
+            </div>
+
+            <!-- Arrows -->
+            <button id="leftArrow" class="carousel-control-prev" type="button" data-bs-target="#tvContainer" data-bs-slide="prev" style="max-width: 5%; max-height: 5%; padding-top: 32vh; left: 4%; background: none; border: none;">
+                <img src="/static/leftArrow.png" class="img-fluid arrow-zoom" style="object-fit: contain;">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button id="rightArrow" class="carousel-control-next" type="button" data-bs-target="#tvContainer" data-bs-slide="next" style="max-width: 5%; max-height: 5%; padding-top: 32vh; right: 4%; background: none; border: none;">
+                <img src="/static/rightArrow.png" class="img-fluid arrow-zoom" style="object-fit: contain;">
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="time" id="clockDisplayH" style="position:absolute; top: 70%; left: 43%;"></div>
+        <div class="time" id="clockDisplay:" style="position:absolute; top: 70%; left: 49.5%;"></div>
+        <div class="time" id="clockDisplayM" style="position:absolute; top: 70%; left: 50.5%;"></div>
+
+        <div class="date" id="dateDisplay" style="position:absolute; top: 82%; left: 43.5%;"></div>
+    </div>
+</div>
