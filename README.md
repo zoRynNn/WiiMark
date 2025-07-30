@@ -1,7 +1,7 @@
 
 # WiiMark
 
-WiiMark is a Wii-themed page where the TVs can be customized to open any page the user wants.
+WiiMark is a Wii-themed web app where the TVs can be customized to open any page the user wants.
 
 ![](static/show.gif)
 
