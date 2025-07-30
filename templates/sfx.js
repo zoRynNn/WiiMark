@@ -1,6 +1,6 @@
-const hoverSound = new Audio("/static/hover.flac");
-const leftArrowSound = new Audio("/static/scrollleft.flac");
-const rightArrowSound = new Audio("/static/scrollright.flac");
+const hoverSound = new Audio("./static/hover.flac");
+const leftArrowSound = new Audio("./static/scrollleft.flac");
+const rightArrowSound = new Audio("./static/scrollright.flac");
 
 document.querySelectorAll('#TV, #settingsButton, .arrow-zoom, #sdButton, #msgButton').forEach(el => {
     el.addEventListener('mouseenter', () => {

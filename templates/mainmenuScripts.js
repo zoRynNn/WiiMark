@@ -2,8 +2,8 @@ function renderTVSlot(index) { // Channel creation function
     const channel = JSON.parse(localStorage.getItem("channel" + index)); // Channel creation, retrieves the JSON file, if nothing is saved it is null
     let content = `
         <div id="TV" class="hover-container position-relative" style="width: fit-content;">
-        <img src="/static/TVborder.png" class="img-fluid" style="object-fit: contain; position: relative; z-index: 2; pointer-events: none;">
-        <img src="/static/TVborderHover.png" class="img-fluid hover-image"
+        <img src="./static/TVborder.png" class="img-fluid" style="object-fit: contain; position: relative; z-index: 2; pointer-events: none;">
+        <img src="./static/TVborderHover.png" class="img-fluid hover-image"
             style="width: 100%; height: 100%; z-index: 2; pointer-events: none;">`; // Creates standard TV in HTML, adding the overlay when hovering
 
     if (channel) { // If there is a channel and an icon, it creates the clickable tv with icon, title and link
@@ -17,7 +17,7 @@ function renderTVSlot(index) { // Channel creation function
         content += `
         <a target="_blank"
             style="position:absolute; top:1%; width:100%; height:100%; left: 0.1%">
-            <img class="channel" src="/static/TVstatichighres.png" style="width:100%; height:100%; object-fit: contain; z-index: 1;">
+            <img class="channel" src="./static/TVstatichighres.png" style="width:100%; height:100%; object-fit: contain; z-index: 1;">
         </a>
         `;
     }

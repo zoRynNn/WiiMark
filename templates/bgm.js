@@ -1,5 +1,5 @@
-const bgm_intro = new Audio("/static/wiimenuintro.flac");
-const bgm = new Audio("/static/wiibgm.flac");
+const bgm_intro = new Audio("./static/wiimenuintro.flac");
+const bgm = new Audio("./static/wiibgm.flac");
 bgm.loop = true; // Loop the background music
 
 document.addEventListener('DOMContentLoaded', () => {

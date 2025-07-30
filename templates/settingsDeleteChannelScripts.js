@@ -23,7 +23,7 @@ function deleteList() {
                 let channel = JSON.parse(localStorage.getItem(key));
                 let button = document.createElement('div');
                 button.className = 'settings';
-                button.style = 'width: 75vw; height: 20vh; max-height: 20vh; object-fit: contain; position: relative; background: url(/static/settingsOption.png) no-repeat center center; background-size: 100% 100%; color: #313031; display: flex; align-items: center; justify-content: center; text-align: center; font-family: Rodin, sans-serif; font-size: 2em; cursor: pointer;';
+                button.style = 'width: 75vw; height: 20vh; max-height: 20vh; object-fit: contain; position: relative; background: url(./static/settingsOption.png) no-repeat center center; background-size: 100% 100%; color: #313031; display: flex; align-items: center; justify-content: center; text-align: center; font-family: Rodin, sans-serif; font-size: 2em; cursor: pointer;';
                 button.style.margin = '10px';
                 button.innerHTML = channel.title + '<br>' + channel.url;
                 button.onclick = function() {
