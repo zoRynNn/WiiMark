@@ -15,6 +15,8 @@ To add a channel simply click the Wii button, where a settings menu will be show
 
 The SD icon shows how much memory the channels are taking up. The message button is for documentation/instructions.
 
+At the moment, the site is meant to be used on computers and tailored to 1080p resolution.
+
 # Info for images
 
 Recommended specs for the images is to use a very light format (like WebP) with a 19:10 ratio. Personally I use 420x220 images, then I round the corners with a radius of AT LEAST 45. Your mileage may vary.
